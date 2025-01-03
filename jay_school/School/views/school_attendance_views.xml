@@ -1,0 +1,44 @@
+<!-- views/school_attendance_views.xml -->
+<odoo>
+    <record id="view_form_school_attendance" model="ir.ui.view">
+        <field name="name">school.attendance.form</field>
+        <field name="model">school.attendance</field>
+        <field name="arch" type="xml">
+            <form string="Attendance">
+                <sheet>
+                    <group>
+                        <field name="student_id"/>
+                        <field name="teacher_id"/>
+                        <field name="date"/>
+                        <field name="status"/>
+                        <field name="remarks"/>
+                    </group>
+                    <footer>
+                        <button name="action_save" string="Save" type="object" class="btn-primary"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_school_attendance" model="ir.ui.view">
+        <field name="name">school.attendance.tree</field>
+        <field name="model">school.attendance</field>
+        <field name="arch" type="xml">
+            <tree string="Attendance">
+                <field name="student_id"/>
+                <field name="teacher_id"/>
+                <field name="date"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_school_attendance" model="ir.actions.act_window">
+        <field name="name">Attendance</field>
+        <field name="res_model">school.attendance</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="school_attendance_menu" name="Attendance" parent="school_management_menu" action="action_school_attendance"/>
+</odoo>

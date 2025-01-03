@@ -1,1 +1,10 @@
-from.import school_student
+from . import school_student
+from . import school_teacher
+from . import school_class
+from . import school_section
+from . import school_subject
+from . import school_attendance
+from . import school_fee
+from . import school_grade
+from . import school_teacher_section
+from . import school_timetable

@@ -10,8 +10,17 @@
     'depends' : [],
     'application' : True,
     'sequence' : -100,
-    'data' : [],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/school_student_views.xml',
+        'views/school_teacher_views.xml',
+        'views/school_class_views.xml',
+        'views/school_section_views.xml',
+        'views/school_attendance_views.xml',
+        'views/school_fee_views.xml',
+        'views/school_grade_views.xml',
+        'views/school_teacher_section_views.xml',
+        'views/school_timetable_views.xml',],
     'installable' : True,
-
     'license': 'LGPL-3',
 }
