@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+"access_student_management_student","access.student.management.student","model_student_management_student","group_school_manager",1,1,1,1
+"access_student_management_course","access.student.management.course","model_student_management_course","group_school_manager",1,1,1,1
+"access_student_management_enrollment","access.student.management.enrollment","model_student_management_enrollment","group_school_manager",1,1,1,1
+"access_student_management_attendance","access.student.management.attendance","model_student_management_attendance","group_school_manager",1,1,1,1

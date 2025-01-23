@@ -1,0 +1,11 @@
+<odoo>
+    <menuitem id="student_management_menu" name="Student Management"/>
+    <menuitem id="student_menu" name="Students" parent="student_management_menu"
+              action="action_student_management_student"/>
+    <menuitem id="course_menu" name="Courses" parent="student_management_menu"
+              action="action_student_management_course"/>
+    <menuitem id="enrollment_menu" name="Enrollments" parent="student_management_menu"
+              action="action_student_management_enrollment"/>
+    <menuitem id="attendance_menu" name="Attendance" parent="student_management_menu" action="school.action_attendance"/>
+
+</odoo>
